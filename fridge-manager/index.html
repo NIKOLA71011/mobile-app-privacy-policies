@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>プライバシーポリシー | 冷蔵庫の在庫管理</title>
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif;
+    line-height: 1.8;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 32px 20px 80px;
+    color: #222;
+    background: #fff;
+  }
+  h1 { font-size: 1.5em; margin-bottom: 0.2em; }
+  h2 { font-size: 1.15em; margin-top: 2em; border-bottom: 2px solid #2E7D32; padding-bottom: 4px; color: #1B5E20; }
+  .updated { color: #666; font-size: 0.9em; margin-bottom: 2em; }
+  ul { padding-left: 1.4em; }
+  li { margin-bottom: 0.5em; }
+  a { color: #2E7D32; }
+  table { border-collapse: collapse; width: 100%; margin: 1em 0; }
+  th, td { border: 1px solid #ddd; padding: 8px 10px; text-align: left; font-size: 0.95em; }
+  th { background: #f1f8f1; }
+</style>
+</head>
+<body>
+
+<h1>プライバシーポリシー</h1>
+<p class="updated">対象アプリ: 冷蔵庫の在庫管理 &nbsp;|&nbsp; 制定日: 2026年8月30日</p>
+
+<p>本アプリ「冷蔵庫の在庫管理」(以下「本アプリ」)は、個人開発者(以下「開発者」)が提供するiOS/Androidアプリです。本ポリシーは、本アプリの利用にあたって取り扱う情報について説明するものです。</p>
+
+<h2>1. 端末内にのみ保存される情報</h2>
+<p>以下の情報は、開発者や第三者のサーバーには送信されず、お使いの端末内にのみ保存されます。アプリを削除すると、これらのデータも端末から削除されます。</p>
+<ul>
+  <li>登録した食材の名称・数量・賞味期限・登録日などの在庫データ</li>
+  <li>アプリの設定(通知のON/OFF、通知タイミングなど)</li>
+  <li>バーコード検索結果のキャッシュ(商品名・メーカー名)</li>
+</ul>
+
+<h2>2. 外部サービスに送信される情報</h2>
+<p>本アプリの一部機能は、以下の外部サービスと通信するために必要最小限の情報を送信します。</p>
+<table>
+  <tr><th>機能</th><th>送信される情報</th><th>送信先</th></tr>
+  <tr>
+    <td>バーコードによる商品名検索</td>
+    <td>スキャンしたバーコード番号(JANコード)のみ</td>
+    <td>開発者が運用するサーバー(Firebase Cloud Functions)を経由して、Yahoo!ショッピングの商品検索APIに送信されます。氏名・端末識別子などの個人情報は含まれません。</td>
+  </tr>
+  <tr>
+    <td>AIによる献立提案</td>
+    <td>利用者が画面上で選択した食材の名称のみ</td>
+    <td>開発者が運用するサーバー(Firebase Cloud Functions)を経由して、Google社のGemini APIに送信され、献立の提案文を生成します。</td>
+  </tr>
+  <tr>
+    <td>広告の表示</td>
+    <td>広告識別子(IDFA/AAID)、おおよその位置情報、端末情報など、広告配信・効果測定に必要な情報</td>
+    <td>Google社の広告サービス(Google AdMob)により収集される場合があります。詳細は下記「広告について」をご確認ください。</td>
+  </tr>
+</table>
+
+<h2>3. カメラの利用について</h2>
+<p>バーコードをスキャンする機能のためにカメラへのアクセス許可を求めます。カメラの映像は端末内でバーコードの読み取りにのみ使用され、画像として保存されたり外部に送信されたりすることはありません。</p>
+
+<h2>4. 通知について</h2>
+<p>賞味期限が近づいた食材をお知らせするための通知(ローカル通知)を端末内で生成します。この通知に関する情報が外部サーバーに送信されることはありません。</p>
+
+<h2>5. 広告について</h2>
+<p>本アプリでは、Google AdMobを利用して広告を表示しています。Google AdMobは、広告の表示・パーソナライズ・効果測定のために、広告識別子等の情報を収集する場合があります。詳細は、Google社のプライバシーポリシーをご確認ください。</p>
+<ul>
+  <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Googleプライバシーポリシー</a></li>
+  <li><a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">Googleパートナーによるデータ利用について</a></li>
+</ul>
+<p>お使いの端末の設定から、広告のパーソナライズを制限することができます(iOS:「設定」→「プライバシーとセキュリティ」→「トラッキング」/「Appleの広告」、Android:「設定」→「Google」→「広告」)。</p>
+
+<h2>6. 第三者への提供</h2>
+<p>開発者は、法令に基づく場合を除き、本アプリを通じて取得した情報を、上記に記載した目的以外で第三者に提供することはありません。</p>
+
+<h2>7. お子様のプライバシーについて</h2>
+<p>本アプリは13歳未満のお子様を主な対象としたサービスではなく、お子様の個人情報を意図的に収集することはありません。</p>
+
+<h2>8. 本ポリシーの変更</h2>
+<p>本ポリシーの内容は、法令の変更やアプリの機能追加に伴い、予告なく変更されることがあります。重要な変更がある場合は、本ページの更新をもってお知らせします。</p>
+
+<h2>9. お問い合わせ</h2>
+<p>本ポリシーに関するお問い合わせは、以下のメールアドレスまでお願いいたします。</p>
+<p><a href="mailto:710nikola@gmail.com">710nikola@gmail.com</a></p>
+
+</body>
+</html>
